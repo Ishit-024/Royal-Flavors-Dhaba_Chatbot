@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Flavors Dhaba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .banner {
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .banner img {
+            width: 1300px;
+            height: 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .menu {
+            text-align: center;
+            padding: 2rem;
+        }
+        .menu p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff5722, #ff9800);
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        .chatbot-popup {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: none;
+            width: 350px;
+            height: 430px;
+        }
+        .chatbot-popup iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Royal Flavors Dhaba</h1>
+        <p>Experience authentic flavors and heartwarming meals!</p>
+    </header>
+
+    <section class="banner">
+        <pre>
+        <img src="menu1.jpg" alt="Delicious Dish 1">
+        <img src="menu2.jpg" alt="Delicious Dish 2">
+        <br>
+        <br>
+        <br>
+        <img src="menu3.jpg" alt="Delicious Dish 3">
+    </pre>
+    </section>
+
+    <section class="menu">
+        <p>Please Order through the chatbot below!</p>
+    </section>
+
+    <div class="chatbot">
+        💬 Chat
+    </div>
+    <div class="chatbot-popup">
+        <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/09711271-eee9-4565-8a33-22cd465b22a8"></iframe>
+
+    <script>
+        const chatbotButton = document.querySelector('.chatbot');
+        const chatbotPopup = document.querySelector('.chatbot-popup');
+
+        chatbotButton.addEventListener('click', () => {
+            chatbotPopup.style.display = chatbotPopup.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
