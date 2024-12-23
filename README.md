@@ -8,7 +8,7 @@ Built using Google Dialogflow, FastAPI, and MySQL, this chatbot supports:
 📦 Tracking order status
 ✔️ Completing orders seamlessly
 </pre>
-✨ Key Features
+### ✨ Key Features
 ### Dialogflow-powered Natural Language Understanding: 
 Seamlessly processes user inputs and provides appropriate responses.
 ### FastAPI Backend:
