@@ -2,11 +2,12 @@
 ### 📖 Project Overview
 The Royal Flavours Dhaba Chatbot is a fully automated food ordering assistant, designed to simplify and streamline the process of ordering delicious meals from Royal Flavours Dhaba.
 Built using Google Dialogflow, FastAPI, and MySQL, this chatbot supports:
-
+<pre>
 🛒 Adding items to orders
 🗑️ Removing items from orders
 📦 Tracking order status
 ✔️ Completing orders seamlessly
+</pre>
 ✨ Key Features
 ### Dialogflow-powered Natural Language Understanding: 
 Seamlessly processes user inputs and provides appropriate responses.
